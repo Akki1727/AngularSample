@@ -1,0 +1,7 @@
+<div class="container">
+  <app-add-user (userAdded)="addUserName($event)"></app-add-user>
+  <div>
+    <span>User List:</span><br>
+    <app-user *ngFor="let item of userList" [userName] = "item"></app-user>
+  </div>
+</div>
